@@ -2,7 +2,7 @@ spring:
   application:
     name: sb-api
   datasource:
-    url: jdbc:postgresql://localhost:5432/school-management
+    url: jdbc:postgresql://host:5432/school-management
     username: admin
     password: admin
     driver-class-name: org.postgresql.Driver

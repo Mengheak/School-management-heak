@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: sb-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/school-management
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  logging:
+    level:
+      org:
+        spring-framework:
+          security: DEBUG
+
+
+config:
+  security:
+    jwt:
+      secret: "7e60354c0030b52bce8c74bff1ff8c548764c1fd08fba2ba3ab7504cebcbd700a8949ec7759e6c3603669776a43ab3d6d0d8043ecb4d269616770ef5700fa873"
+      issuer: "school-mgnt"
+      access-token-minutes: 60
+  pagination:
+    base-url: "http//:localhost:8080/api/v1"
+    uri:
+      student: "/student"
+
